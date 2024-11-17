@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apple</title>
+  <!-- Google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet" />
+  <!-- font awsome cdn link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--CSS Bootstrap CDN link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <!-- favicon link -->
+  <link rel="shortcut icon" href="./images/logo white.png" type="image/x-icon" />
+  <!-- link with main css -->
+  <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+  <!-- nav bar start -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+    <div class="container-fluid">
+      <img src="./images/logo white.png" alt="Logo" class="img-fluid logoImage" />
+      <a class="navbar-brand ms-3" href="#"> Apple Store </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+          <li class="nav-item">
+            <a class="nav-link fs-5" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-5" href="#catego"> Categories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-5" aria-current="page" href="#">Best Sellers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-5 position-relative" aria-current="page" href="#">
+              Cart <i class="fa-solid fa-cart-shopping"></i>
+              <span class="position-absolute top-0 start-10 translate-middle badge rounded-circle bg-dark">
+                10
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link fs-5 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Country
+            </a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item">
+                <input class="form-check-input text-light" type="radio" name="listGroupRadio" value=""
+                  id="firstRadio" />
+                <label class="form-check-label" for="firstRadio">Singapore</label>
+              </li>
+              <li class="dropdown-item">
+                <input class="form-check-input" type="radio" name="listGroupRadio" value="" id="secondRadio" />
+                <label class="form-check-label" for="secondRadio">
+                  United State</label>
+              </li>
+              <li class="dropdown-item">
+                <input class="form-check-input" type="radio" name="listGroupRadio" value="" id="thirdRadio" />
+                <label class="form-check-label" for="thirdRadio">Australia</label>
+              </li>
+              <li class="dropdown-item">
+                <input class="form-check-input" type="radio" name="listGroupRadio" value="" id="thirdRadio" />
+                <label class="form-check-label" for="thirdRadio">Germany</label>
+              </li>
+              <li class="dropdown-item">
+                <input class="form-check-input" type="radio" name="listGroupRadio" value="" id="thirdRadio" />
+                <label class="form-check-label" for="thirdRadio">United Kingdom</label>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-dark" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- nav bar end -->
+
+  <!-- home page start -->
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./images/3D 3.jpg" class="d-block w-100" alt="..." />
+        <div class="carousel-caption d-none d-md-block text-dark">
+          <h5>The Lastest iPhone 15</h5>
+          <p>
+            Think difference & Explore difference with apple
+            <i class="fa-brands fa-apple"></i>
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./images/3D 5.png" class="d-block w-100" alt="..." />
+        <div class="carousel-caption d-none d-md-block ">
+          <h5>Customize your own color</h5>
+          <p>
+            Think difference & Explore difference with apple
+            <i class="fa-brands fa-apple"></i>
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./images/3D 4.jpg" class="d-block w-100" alt="..." />
+        <div class="carousel-caption d-none d-md-block text-dark">
+          <h5>Customize size iPhone 15 pro VS iPhone 15</h5>
+          <p>
+            Think difference & Explore difference with apple
+            <i class="fa-brands fa-apple"></i>
+          </p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon bg-black rounded-circle fs-6" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon bg-black rounded-circle fs-6" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- Home text -->
+  <div>
+    <h3 class="text-capitalize text-center my-3 homeText">
+      <b> Store.</b>
+      The best way to buy the products you love.
+    </h3>
+  </div>
+  <!-- Home page end -->
+
+  <!-- catagories start -->
+  <!-- catego-title  -->
+  <div class="catego my-3 rounded-end-pill text-light bg-dark" >
+    <h3 class="my-2 ps-2  catego-text" id="catego">
+      <i class="fa-solid fa-hashtag"></i> Categories
+    </h3>
+  </div>
+  <!-- catego logos -->
+  <div class="container">
+    <div class="row text-center catego-img">
+      <div class="col-lg-2 col-md-3 col-4">
+        <a href="#watch">
+          <img src="./images/catego-1.png" alt="" class="img-fluid rounded-1 border" title="Apple Watch" />
+        </a>
+        <h5>Apple Watch</h5>
+      </div>
+      <div class="col-lg-2 col-md-3 col-4">
+        <a href="#iphone">
+          <img src="./images/catego-2.png" alt="" class="img-fluid rounded-1 border" title="iPhone" />
+        </a>
+        <h5>iPhone</h5>
+      </div>
+      <div class="col-lg-2 col-md-3 col-4">
+        <a href="#Mac">
+          <img src="./images/catego-3.png" alt="" class="img-fluid rounded-1 border" title="iMac" />
+        </a>
+        <h5>iMac</h5>
+      </div>
+      <div class="col-lg-2 col-md-3 col-4">
+        <a href="#iPad">
+          <img src="./images/catego-4.png" alt="" class="img-fluid rounded-1 border" title="iPads" />
+        </a>
+        <h5>iPads</h5>
+      </div>
+      <div class="col-lg-2 col-md-3 col-4">
+        <a href="#airpods">
+          <img src="./images/catego-5.png" alt="" class="img-fluid rounded-1 border" title="Airpods" />
+        </a>
+        <h5>Airpods</h5>
+      </div>
+      <div class="col-lg-2 col-md-3 col-4">
+        <a href="#homepod">
+          <img src="./images/catego-6.png" alt="" class="img-fluid rounded-1 border" title="Homepod" />
+        </a>
+        <h5>Homepod</h5>
+      </div>
+    </div>
+  </div>
+  <!-- categories ended -->
+
+  <!-- Bestseller section start -->
+  <section class="container text-center">
+    <div class="row text-center">
+      <div class="col-12 text-capitalize my-3">
+        <h3>Check out <b>bestseller</b> items of this week!</h3>
+      </div>
+    </div>
+    <div class="row row-cols-lg-4 row-cols-md-3 row-gap-5">
+      <div class="col-6 overlaybox">
+        <img src="./images/Bestseller 1.jpg" alt="" class="img-fluid rounded-2 overlayimg" />
+        <div class="overlay">
+          <h5>iPhone 16 Pro</h5>
+          <a class="btn btn-outline-light" href="#" role="button">Take a Look</a>
+        </div>
+      </div>
+      <div class="col-6 overlaybox">
+        <img src="./images/Bestseller 2.jpg" alt="" class="img-fluid rounded-2 overlayimg" />
+        <div class="overlay">
+          <h5>ipad Mini</h5>
+
+          <a class="btn btn-outline-light" href="#" role="button">Take a Look</a>
+        </div>
+      </div>
+      <div class="col-6 overlaybox">
+        <img src="./images/Bestseller 6.jpg" alt="" class="img-fluid rounded-2 overlayimg" />
+        <div class="overlay">
+          <h5>Macbook Air</h5>
+
+          <a class="btn btn-outline-light" href="#" role="button">Take a Look</a>
+        </div>
+      </div>
+
+      <div class="col-6 overlaybox">
+        <img src="./images/Bestseller 4.jpg" alt="" class="img-fluid rounded-2 overlayimg" />
+        <div class="overlay">
+          <h5>iWatch Ultra 2</h5>
+
+          <a class="btn btn-outline-light" href="#" role="button">Take a Look</a>
+        </div>
+      </div>
+      <div class="col-6 overlaybox">
+        <img src="./images/Bestseller 7.jpg" alt="" class="img-fluid rounded-2 overlayimg" />
+        <div class="overlay">
+          <h5>iPhone 16</h5>
+
+          <a class="btn btn-outline-light" href="#" role="button">Take a Look</a>
+        </div>
+      </div>
+      <div class="col-6 overlaybox">
+        <img src="./images/Bestseller 8.jpg" alt="" class="img-fluid rounded-2 overlayimg" />
+        <div class="overlay">
+          <h5>Vision Pro</h5>
+
+          <a class="btn btn-outline-light" href="#" role="button">Take a Look</a>
+        </div>
+      </div>
+      <div class="col-6 overlaybox">
+        <img src="./images/Bestseller 9.jpg" alt="" class="img-fluid rounded-2 overlayimg" />
+        <div class="overlay">
+          <h5>Macbook Pro</h5>
+
+          <a class="btn btn-outline-light" href="#" role="button">Take a Look</a>
+        </div>
+      </div>
+      <div class="col-6 overlaybox">
+        <img src="./images/Bestseller 10.jpg" alt="" class="img-fluid rounded-2 overlayimg" />
+        <div class="overlay">
+          <h5>iPad Pro</h5>
+
+          <a class="btn btn-outline-light" href="#" role="button">Take a Look</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Bestseller section end -->
+
+  <!-- watch section start -->
+  <div class="text-center my-5" id="watch">
+    <h2><b>All models. </b> your pick.</h2>
+  </div>
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="cards-wrapper">
+          <div class="card">
+            <div class="card-img-overlay text-center mt-3">
+              <h3>Check all Apple Watch features</h3>
+            </div>
+            <img src="./images/Home-watch-1.jpg" class="img-fluid" alt="..." />
+          </div>
+
+          <div class="card">
+            <img src="./images/watch-1.jpg" class="img-fluid my-5" alt="..." />
+            <div class="card-body text-center">
+              <h5 class="card-title">Apple Watch Series 10</h5>
+              <p class="card-text">From $399 or $33.25/mo. For 12mo.</p>
+              <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/watch-2.jpg" class="img-fluid my-5" alt="..." />
+            <div class="card-body text-center">
+              <h5 class="card-title">Apple Watch Ultra 2</h5>
+              <p class="card-text">From $799 or $66.58/mo. For 1mo.</p>
+              <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="cards-wrapper">
+          <div class="card">
+            <img src="./images/watch-3.jpg" class="img-fluid my-5" alt="..." />
+            <div class="card-body text-center">
+              <h5 class="card-title">Apple Watch SE</h5>
+              <p class="card-text">From $249 or $20.75/mo. For 12mo.</p>
+              <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/watch-4.jpg" class="img-fluid my-5" alt="..." />
+            <div class="card-body text-center">
+              <h5 class="card-title">Apple Watch Hermes Series 10</h5>
+              <p class="card-text">From $1249 or $104.08/mo. For 12mo.</p>
+              <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/watch-5.jpg" class="img-fluid my-5" alt="..." />
+            <div class="card-body text-center">
+              <h5 class="card-title">Apple Watch Hermes Ultra 2</h5>
+              <p class="card-text">From $1399 or $116.58/mo.For 12mo.</p>
+              <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="cards-wrapper">
+          <div class="card">
+            <img src="./images/watch-6.jpg" class="img-fluid my-5" alt="..." />
+            <div class="card-body text-center">
+              <p class="card-text">
+                46 mm Star Fruit Solo Loop- Size 6 <br />
+                <small> $49.00</small>
+              </p>
+              <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/watch-7.jpg" class="img-fluid my-5" alt="..." />
+            <div class="card-body text-center">
+              <p class="card-text">
+                46 mm Blue Cloud Sport Loop <br />
+                <small> $49.00</small>
+              </p>
+              <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/watch-8.jpg" class="img-fluid my-5" alt="..." />
+            <div class="card-body text-center">
+              <p class="card-text">
+                46 mm Natural Milanese Loop (M/L) <br />
+                <small> $99.00</small>
+              </p>
+              <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="cards-wrapper">
+          <div class="card">
+            <img src="./images/watch-11.jpg" class="img-fluid my-5" alt="..." />
+            <div class="card-body text-center">
+              <p class="card-text">
+                46 mm Rouge Grenat Torsade Single <br />
+                <small> $349.00</small>
+              </p>
+              <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/watch-10.jpg" class="img-fluid my-5" alt="..." />
+            <div class="card-body text-center">
+              <h6 class="card-text">
+                49mm Ice Blue Ocean Band <br />
+                <small> $99.00</small>
+              </h6>
+              <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/watch-9.jpg" class="img-fluid my-5" alt="..." />
+            <div class="card-body text-center">
+              <p class="card-text">
+                46 mm Green Nike Sport Loop <br />
+                <small> $49.00</small>
+              </p>
+              <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- watch section end -->
+
+  <!-- iPhone section start -->
+  <div class="text-center my-5" id="iphone">
+    <h2>
+      <b> The iPhone experience. </b>
+      Designed to connect with everything Apple.
+    </h2>
+  </div>
+  <div id="carousel-1" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="cards-wrapper">
+          <div class="card">
+            <img src="./images/iphone-1.jpg" class="img-fluid my-5" alt="..." />
+            <div class="card-body text-center">
+              <h5 class="card-title">iPhone 16 Pro & iPhone 16 Pro Max</h5>
+              <p class="card-text">From $999 or $41.62/mo. For 24mo.</p>
+              <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./images/iphone-2.jpg" class="img-fluid my-5" alt="..." />
+            <div class="card-body text-center">
+              <h5 class="card-title">iPhone 16 & iPhone 16 Plus</h5>
+              <p class="card-text">From $799 or $33.29/mo. For 24mo.</p>
+              <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/iphone-3.jpg" class="img-fluid my-5" alt="..." />
+            <div class="card-body text-center">
+              <h5 class="card-title">iPhone 15 & iPhone 15 Plus</h5>
+              <p class="card-text">From $699 or $29.12/mo. For 24mo.</p>
+              <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="cards-wrapper">
+          <div class="card">
+            <img src="./images/iphone-4.jpg" class="img-fluid my-5" alt="..." />
+            <div class="card-body text-center">
+              <h5 class="card-title">iPhone 14 & iPhone 14 Plus</h5>
+              <p class="card-text">From $599 or $24.95/mo. For 24mo.</p>
+              <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/iphone-5.jpg" class="img-fluid my-5" alt="..." />
+            <div class="card-body text-center">
+              <h5 class="card-title">iPhone SE</h5>
+              <p class="card-text">From $429 or $17.87/mo. For 24mo.</p>
+              <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img-overlay">
+              <h3 class="card-text text-center">
+                Explore All <br />
+                iPhone Accessories
+              </h3>
+            </div>
+            <img src="./images/iphone-6.jpg" class="img-fluid mb-0" alt="..." />
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="cards-wrapper">
+          <div class="card">
+            <img src="./images/iphone-7.jpg" class="img-fluid my-5" alt="..." />
+            <div class="card-body text-center">
+              <p class="card-text">
+                iPhone 16 Pro Max Clear Case with MagSafe<br />
+                <small> $49.00</small>
+              </p>
+              <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/iphone-8.jpg" class="img-fluid my-5" alt="..." />
+            <div class="card-body text-center">
+              <p class="card-text">
+                iPhone FineWoven Wallet with MagSafe<br />
+                <small> $59.00</small>
+              </p>
+              <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/iphone-9.jpg" class="img-fluid my-5" alt="..." />
+            <div class="card-body text-center">
+              <p class="card-text">
+                iPhone 16 Pro Case with MagSafe- summit Stone<br />
+                <small> $49.00</small>
+              </p>
+              <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="cards-wrapper">
+          <div class="card">
+            <img src="./images/iphone-10.jpg" class="img-fluid my-5" alt="..." />
+            <div class="card-body text-center">
+              <p class="card-text">
+                iPhone 16 OtterBox Lumen Series Case with MagSafe <br />
+                <small> $49.95</small>
+              </p>
+              <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/iphone-11.jpg" class="img-fluid my-5" alt="..." />
+            <div class="card-body text-center">
+              <h6 class="card-text">
+                iPhone 16 Silicone Case with MagSafe- Ultramarine <br />
+                <small> $49.00</small>
+              </h6>
+              <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/iphone-12.jpg" class="img-fluid my-5" alt="..." />
+            <div class="card-body text-center">
+              <h6 class="bg-warning rounded-end-pill rounded-start-pill"> New</h6>
+              <p class="card-text">
+                MagSafe Chargerr (1 m) <br />
+                <small> $39.00</small>
+              </p>
+              <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-1" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel-1" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- iPhone section end -->
+
+  <!-- Mac section start -->
+  <div class="text-center my-5" id="Mac">
+    <h2>
+      <b> The Mac experience. </b>
+      Designed to connect with everything Apple.
+    </h2>
+  </div>
+  <div id="carousel-2" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="cards-wrapper">
+          <div class="card">
+            <img src="./images/Mac-1.jpg" class="img-fluid my-5" alt="..." />
+            <div class="card-body text-center">
+              <h5 class="card-title">Macbook Air</h5>
+              <p class="card-text">From $999 or $83.25/mo. For 12mo.</p>
+              <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./images/Mac-2.jpg" class="img-fluid my-5" alt="..." />
+            <div class="card-body text-center">
+              <h5 class="card-title">Macbook Pro</h5>
+              <p class="card-text">From $1599 or $133.25/mo. For 12mo.</p>
+              <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/Mac-3.jpg" class="img-fluid my-5" alt="..." />
+            <div class="card-body text-center">
+              <h6 class="bg-warning rounded-end-pill rounded-start-pill"> New</h6>
+              <h5 class="card-title">iMac</h5>
+              <p class="card-text">From $1299 or $108.25/mo. For 12mo.</p>
+              <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="cards-wrapper">
+          <div class="card">
+            <img src="./images/Mac-4.jpg" class="img-fluid mt-2 " alt="..." />
+            <div class="card-body text-center">
+              <h6 class="bg-warning rounded-end-pill rounded-start-pill"> New</h6>
+              <h5 class="card-title">Studic Display</h5>
+              <p class="card-text">From $1599 or $133.25/mo. For 12mo.</p>
+              <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/Mac-5.jpg" class="img-fluid mt-2" alt="..." />
+            <div class="card-body text-center">
+              <h5 class="card-title">Pro Display XDR</h5>
+              <p class="card-text">From $4999 or $416.58/mo. For 12mo.</p>
+              <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/Mac-6.jpg" class="img-fluid my-5" alt="..." />
+            <div class="card-body text-center">
+              <h5 class="card-title">Mac Mini</h5>
+              <p class="card-text">From $599 or $49.91/mo. For 12mo.</p>
+              <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="cards-wrapper">
+          <div class="card">
+            <img src="./images/Mac-7.jpg" class="img-fluid mt-2" alt="..." />
+            <div class="card-body text-center">
+              <h5 class="card-title">Mac Studic</h5>
+              <p class="card-text">From $1999 or $166.58/mo. For 12mo.</p>
+              <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img-overlay">
+              <h3 class="card-text text-center">
+                Get the most <br />
+                From your Mac
+              </h3>
+            </div>
+            <img src="./images/Home-mac.jpg" class="img-fluid mb-0" alt="..." />
+          </div>
+          <div class="card">
+            <img src="./images/Mac-8.jpg" class="img-fluid my-5 " alt="..." />
+            <div class="card-body text-center">
+              <p class="card-text">
+              <h6 class="bg-warning rounded-end-pill rounded-start-pill"> New</h6>
+              Magic Keyboard with Touch ID <br />
+              <small> $179.00</small>
+              </p>
+              <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="cards-wrapper">
+          <div class="card">
+            <img src="./images/Mac-9.jpg" class="img-fluid my-3" alt="..." />
+            <div class="card-body text-center">
+              <p class="card-text">
+              <h6 class="bg-warning rounded-end-pill rounded-start-pill"> New</h6>
+              Magic Mouse (USB-C)- Multi Touch <br>
+              <small> $79.00</small>
+              </p>
+              <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/Mac-10.jpg" class="img-fluid my-5" alt="..." />
+            <div class="card-body text-center">
+              <h6 class="bg-warning rounded-end-pill rounded-start-pill"> New</h6>
+              <h6 class="card-text">
+                Magic Trackpad (USB-C)- Multi Touch Surface <br>
+                <small> $129.00</small>
+              </h6>
+              <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/Mac-11.jpg" class="img-fluid my-5" alt="..." />
+            <div class="card-body text-center">
+              <p class="card-text">
+                240W (USB-C) Charge Cable (2 m) <br />
+                <small> $29.00</small>
+              </p>
+              <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-2" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel-2" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- Mac section end -->
+
+  <!-- iPad section start -->
+  <div class="text-center my-5" id="iPad">
+    <h2>
+      <b> Everyday Essentials. </b>
+      Work and Create with ease.
+    </h2>
+  </div>
+  <div id="carousel-3" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="cards-wrapper">
+          <div class="card">
+            <img src="./images/ipad-1.jpg" class="img-fluid my-5" alt="..." />
+            <div class="card-body text-center">
+              <h5 class="card-title">iPad Pro</h5>
+              <p class="card-text">From $999 or $83.25/mo. For 12mo.</p>
+              <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./images/ipad-2.jpg" class="img-fluid my-5" alt="..." />
+            <div class="card-body text-center">
+              <h5 class="card-title">iPad Air</h5>
+              <p class="card-text">From $599 or $49.91/mo. For 12mo.</p>
+              <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/ipad-3.jpg" class="img-fluid my-5" alt="..." />
+            <div class="card-body text-center">
+              <h5 class="card-title">iPad</h5>
+              <p class="card-text">From $349 or $29.08/mo. For 12mo.</p>
+              <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="cards-wrapper">
+          <div class="card">
+            <img src="./images/ipad-4.jpg" class="img-fluid my-5 " alt="..." />
+            <div class="card-body text-center">
+              <h5 class="card-title">iPad Mini</h5>
+              <p class="card-text">From $499 or $41.58/mo. For 12mo.</p>
+              <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img-overlay mt-3">
+              <h3 class="card-text text-center">
+                Explore all <br />
+                iPad Accessories
+              </h3>
+            </div>
+            <img src="./images/ipad-5.jpg" class="img-fluid mt-5" alt="..." />
+          </div>
+          <div class="card">
+            <img src="./images/ipad-6.jpg" class="img-fluid my-5" alt="..." />
+            <div class="card-body text-center">
+              <p class="card-text">
+                Apple Pencil Pro <br>
+                <small> $129.00</small>
+              </p>
+              <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="cards-wrapper">
+          <div class="card">
+            <img src="./images/ipad-8.jpg" class="img-fluid my-5" alt="..." />
+            <div class="card-body text-center">
+              <p class="card-text"> Smart Folio for iPad (10th Generation)
+                <br>
+                <small> $79.00</small>
+              </p>
+              <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/ipad-9.jpg" class="img-fluid my-5" alt="..." />
+            <div class="card-body text-center">
+              <p class="card-text">Magic Keyboard Folio for iPad (10th Generation)
+                <br>
+                <small> $249.00</small>
+              </p>
+              <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./images/ipad-10.jpg" class="img-fluid my-5 " alt="..." />
+            <div class="card-body text-center">
+              <p class="card-text">
+              <h6 class="bg-warning rounded-end-pill rounded-start-pill"> New</h6>
+              Smart Folio foor iPad mini (A17 Pro) <br />
+              <small> $59.00</small>
+              </p>
+              <a href="#" class="btn btn-outline-dark">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-3" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel-3" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- iPad section end -->
+
+  <!-- Airpods section start -->
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-12 airpods-main">
+        <img src="./images/Home-airpod.jpg" alt="Airpods" class="rounded-3 img-fluid">
+        <div class="airpods-overlay text-center ">
+          <h1 class="text-bg-light"> Airpods 4</h1>
+          <h3 class="py-lg-2 py-md-2"> The next evolution of sound and comfort.</h3>
+          <h5> With Active Noise Cancellation <small> $179</small></h5>
+          <a href="#" class="btn btn-dark"> Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-4">
+    <div class="row text-center">
+      <div class="col-6 col-lg-3 airpods-section">
+        <img src="./images/airpod-5.jpg" class="img-fluid  rounded-3" alt="">
+        <h3 class="mt-2"> Airpods 4</h3>
+        <small class="bg-warning"> $129</small> <br>
+        <p> The next evolution of sound and comfort.</p>
+        <a href="#" class="btn btn-outline-dark mb-2 airpods-btn"> Add to Cart</a>
+      </div>
+      <div class="col-6 col-lg-3 airpods-section">
+        <img src="./images/airpod- 2.jpg" class="img-fluid  rounded-3" alt="">
+        <h3 class="mt-2"> Airpods 4</h3>
+        <small class="bg-warning"> $179</small> <br>
+        <p> The next evolution of sound, comfort and noise control.</p>
+        <a href="#" class="btn btn-outline-dark mb-2 airpods-btn"> Add to Cart</a>
+      </div>
+      <div class="col-6 col-lg-3 airpods-section">
+        <img src="./images/airpod-3.jpg" class="img-fluid  rounded-3" alt="">
+        <h3 class="mt-2"> Airpods Pro 2</h3>
+        <small class="bg-warning"> $249</small> <br>
+        <p> Cancellation and a breakthrough in hearing health.</p>
+        <a href="#" class="btn btn-outline-dark mb-2 airpods-btn"> Add to Cart</a>
+      </div>
+      <div class="col-6 col-lg-3 airpods-section">
+        <img src="./images/airpod-4.jpg" class="img-fluid  rounded-3" alt="">
+        <h3 class="mt-2"> Airpods Max</h3>
+        <p> The ultimate over-ear listening experience.</p>
+        <small class="bg-warning"> $549</small> <br>
+        <a href="#" class="btn btn-outline-dark mb-2 airpods-btn"> Add to Cart</a>
+      </div>
+    </div>
+  </div>
+  <!-- Airpods section end -->
+
+  <!-- homepod section start -->
+
+  <!-- main homepod text -->
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <hr>
+        <h2 id="homepod"> Speakers of the house. </h2>
+        <p> With <a href="#homepod-1" style="color: black;"> Homepod</a>
+          or<a href="#homepod-2" style="color: black;"> Homepod mini</a> , amplify all the listening experiences you
+          love. And enjoy an effortlessly
+          connected smart home — with Siri built in — that’s private and secure. </p>
+        <hr>
+      </div>
+    </div>
+  </div>
+
+  <!-- first image -->
+  <div class="homepod-text text-center my-3">
+    <img src="./images/homepod-3.png" alt="" class="img-fluid " id="homepod-2">
+    <!-- text for lg and md screen -->
+    <p class="d-none d-lg-block d-md-block my-md-5">
+      <b>HomePod mini </b> is designed to fit anywhere in the house. Its elegant shape is wrapped in a perfectly
+      seamless mesh
+      fabric that’s virtually transparent to the sound passing through it. A backlit touch surface on the top provides
+      quick control. <br>
+      <em class="bg-warning"> $99</em> <br>
+      <a href="#" class="btn btn-outline-dark mb-2 airpods-btn"> Read More</a>
+    </p>
+    <!-- text for sm screen -->
+    <div class="d-lg-none d-md-none">
+      <h2> Homepod Mini </h2>
+      <h6>Surprising sound for its size. </h6>
+      <h6> $99</h6>
+      <a href="#" class="btn btn-outline-dark mb-2 airpods-btn"> Add to Cart</a>
+    </div>
+  </div>
+  <!-- second image -->
+  <div class="homepod-text text-center my-3">
+    <!-- text for lg and md screen -->
+    <p class="d-none d-lg-block d-md-block">
+      <b>HomePod</b> is a powerhouse of a speaker. Apple‑engineered audio technology and advanced software
+      deliver high‑fidelity sound throughout the room. It intelligently adapts to whatever it’s playing — or wherever
+      it’s playing — and surrounds you in immersive audio that makes everything you listen to sound incredible.. <br>
+      <em class="bg-warning"> $299</em> <br>
+      <a href="#" class="btn btn-outline-dark mb-2 airpods-btn"> Read More</a>
+    </p>
+    <img src="./images/homepod-4.jpg" alt="" class="img-fluid" id="homepod-1">
+    <!-- text for sm screen -->
+    <div class="d-lg-none d-md-none">
+      <h2> Homepod</h2>
+      <h6>Immersive, high‑fidelity audio. </h6>
+      <h6> $299</h6>
+      <a href="#" class="btn btn-outline-dark mb-2 airpods-btn"> Add to Cart</a>
+    </div>
+  </div>
+  <!-- homepod section end -->
+
+  <!-- footer start -->
+  <div class="text-center bg-dark text-light footer-div p-3">
+    <h2> Need help ?</h2>
+    <h3> Quick Links </h3>
+    <div class="my-3 footer-a text-center">
+      <a class="btn btn-secondary me-3" href="#" role="button">
+        <i class="fa-solid fa-person"></i> Talk with Apple Guide</a>
+      <a class="btn btn-secondary me-3" href="#" role="button">
+        <i class="fa-brands fa-docker"></i> Shipping Info</a>
+      <a class="btn btn-secondary me-3" href="#" role="button">
+        <i class="fa-solid fa-money-bill p-1"></i> About Refund</a>
+      <a class="btn btn-secondary me-3 exchange" href="#" role="button">
+        <i class="fa-solid fa-mobile-screen-button p-1"></i>Model Exchange</a>
+    </div>
+  </div>
+  <div class="steve-text bg-dark text-light">
+    <img src="./images/steve-job.jpg" alt="" class="img-fluid rounded-circle ms-lg-3" style="width: 120px; height: 120px;">
+    <div class="steve-h">
+    <h5 class="steve-h5"> Honor of Steven Paul Jobs (February 24, 1955 – October 5, 2011)</h5>
+    <h6> <i class="fa-regular fa-copyright"></i> All Copyright to Apple <i class="fa-brands fa-apple"></i> </h6>
+    </div>  
+  </div>
+  <!--js bootstrap CDN link -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
